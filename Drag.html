@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Resizable and Draggable</title>
+
+<script src="drag_resize.js"></script>
+<link href="drag_resize.css" rel="stylesheet">
+
+
+<style type="text/css">
+body{
+	background-color: #CFCFCF;
+}
+
+#area {
+	position:absolute;
+	width:621px;
+	height:450px;
+	background-color: #FFFFFF;
+	border: 2px inset gray;
+	left: 39px;
+	top: 57px;
+	text-align:center;
+}
+
+div .Draggable{
+	box-shadow: 0px 3px 6px rgba(0,0,0,0.5);
+}
+
+#apDiv0 {
+	position:absolute;
+	left:5%;
+	top:5%;
+	width:90%;
+	height:90%;
+	z-index:1;
+	border: 1px dashed cyan;
+}
+
+#apDiv1 {
+	position:absolute;
+	left:43px;
+	top:68px;
+	width:92px;
+	height:92px;
+	z-index:1;
+	background-color: #FFFF99;
+	border: 1px inset black;
+}
+#apDiv2 {
+	position:absolute;
+	left:184px;
+	top:70px;
+	width:92px;
+	height:92px;
+	z-index:4;
+	background-color: #33CCFF;
+	border: 1px inset black;
+}
+#apDiv3 {
+	position:absolute;
+	left:333px;
+	top:70px;
+	width:92px;
+	height:92px;
+	z-index:2;
+	background-color: #993366;
+	background-color: #00FF99;
+	border: 1px inset black;
+}
+#apDiv4 {
+	position:absolute;
+	left:474px;
+	top:72px;
+	width:92px;
+	height:92px;
+	z-index:2;
+	background-color: #993399;
+	background-color: #FF99FF;
+	border: 1px inset black;
+}
+#apDiv5 {
+	position:absolute;
+	left:43px;
+	top:229px;
+	width:92px;
+	height:92px;
+	z-index:1;
+	background-color: #66CCCC;
+	border: 1px inset black;
+}
+#apDiv6 {
+	position:absolute;
+	left:188px;
+	top:228px;
+	width:92px;
+	height:92px;
+	z-index:1;
+	background-color: #9999FF;
+	border: 1px inset black;
+}
+</style>
+</head>
+
+<body>
+
+<div id="apDiv0">
+
+
+<div id="area" class="Draggable Resizable">
+
+    <div id="apDiv1" class="Draggable"> Draggable Box </div>    
+    <div id="apDiv2" class="Resizable"> Resizable Box </div>
+    <div id="apDiv3" class="Draggable Resizable">Draggable and Resizable Box</div>
+    <div id="apDiv4" class="Draggable Resizable Traversable">Draggable, Resizable and Traversable Box</div>
+    <div id="apDiv5" class="Draggable"> Draggable Box (With Grabber)</div>    
+    <div id="apDiv6" class="Draggable Resizable">Draggable and Resizable Box (With Grabber)</div>
+
+</div>
+</div>
+
+
+
+<script type="text/javascript">
+/* JAVASCRIPT GOES HERE */
+window.onload=function(){
+		
+	//enableDragAndResize();
+	
+		
+	makeDraggable(id('apDiv1'),false);
+	makeResizable(id('apDiv2'));
+	makeDraggable(id('apDiv3'),false);
+	makeResizable(id('apDiv3'));
+	makeDraggable(id('apDiv4'),false);
+	makeResizable(id('apDiv4'));
+	makeDraggable(id('apDiv5'),true);
+	makeDraggable(id('apDiv6'),true);
+	makeResizable(id('apDiv6'));
+	
+};
+
+function id(id){
+	return document.getElementById(id);
+}
+
+</script>
+  
+</body>
+</html>
