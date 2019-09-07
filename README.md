@@ -1,7 +1,7 @@
 drag-and-resize
 ===============
 
-My was my first time implementing drag and resize on the web before jquery was even a thing. I remember I implemented this without looking at any other code. At the time I used IE6 as my main browser, I'm surprised that it still works to this day.
+This was my first time implementing drag and resize on the web before, this was before jquery was even a thing. I remember I implemented this without looking at any other code, drag interfaces wasn't popular at all at the time (on the web at least). At the time I used IE6 as my main browser, I'm surprised that it still works to this day.
 
 http://victornpb.github.io/drag-and-resize/
 
