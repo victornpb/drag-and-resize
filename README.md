@@ -1,7 +1,7 @@
 drag-and-resize
 ===============
 
-This was my first time implementing drag and resize on the web before, this was before jquery was even a thing. I remember I implemented this without looking at any other code, drag interfaces wasn't popular at all at the time (on the web at least). At the time I used IE6 as my main browser, I'm surprised that it still works to this day. 
+This was my first time implementing drag and resize on the web, this was before jquery was even a thing. I remember I implemented this without looking at any other code, drag interfaces wasn't popular at all at the time (on the web at least). At the time I used IE6 as my main browser, I'm surprised that it still works to this day. 
 
 I certainly remember IE6 wasnt particularly fast at refreshing the boxes under the cursor, they lagged a bit behind the cursor, that's why the mousemove is registered outside the elements, because the cursor would get outside the box if you dragged it too fast. So this was "optimized for performance" back then.
 
